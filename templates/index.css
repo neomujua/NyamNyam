@@ -1,0 +1,25 @@
+#choice1 {
+    position : static;
+    float : left;
+    margin : 7vw;
+    text-align: center;
+    justify-content: center;
+}
+#choice2 {
+    position : relative;
+    float : right;
+    text-align: center;
+    justify-content: center;
+    margin : 7vw;
+}
+#choices {
+    padding: 10vw;
+    justify-content: center;
+    text-align: center;
+}
+#decide {
+    position : static;
+    justify-content: center;
+    margin-top : 10vw;
+    text-align: center;
+}
