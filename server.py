@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*- 
 from flask import Flask, render_template, request
 from instaCrawl import *
+from googleTrend import *
 
 app = Flask(__name__)
 
@@ -13,8 +14,8 @@ def test():
 def post():
     choice1 = request.form['choice1']
     choice2 = request.form['choice2']
-    result1 = crawl(choice1)
-    result2 = crawl(choice2)
+    result1 = instaCrawl(choice1)
+    result2 = instaCrawl(choice2)
     result = result1 + result2
     print(result)
     return result

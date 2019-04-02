@@ -4,7 +4,7 @@ import selenium.webdriver as webdriver
 
 
 
-def crawl(a):
+def instaCrawl(a):
     url = "https://www.instagram.com/explore/tags/"
     url += a
 	
