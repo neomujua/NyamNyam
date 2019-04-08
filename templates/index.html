@@ -9,18 +9,28 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <form action="/post" method="post">
-        <div id="choices">
-            <div id="choice1">
-                choice1<br><input style="background-color:red;" type="text" name="choice1">
+    <div id="bg"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./shards.js"></script>
+    <script>
+        (function($) {
+          $('#bg').shards([10,35,180,.15],[255,20,220,.25],[0,0,0,.25],20,.58,2,.15,true);
+        })(jQuery);
+    </script>
+    <div id="content">
+        <form action="/post" method="post">
+            <div id="choices">
+                <div id="choice1">
+                    choice1<br><input type="text" name="choice1" placeholder="선택1">
+                </div>
+                <div id="choice2">
+                    chocie2<br><input type="text" name="choice2" placeholder="선택2">
+                </div>
             </div>
-            <div id="choice2">
-                chocie2<br><input style="background-color:green;"type="text" name="choice2">
+            <div id="decideBtn">
+                <input type="submit" value="냠냠">
             </div>
-        </div>
-        <div id="decide">
-            <input style="background-color: blue;" type="submit" value="냠냠">
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 </html>

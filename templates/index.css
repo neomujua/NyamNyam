@@ -4,6 +4,7 @@
     margin : 7vw;
     text-align: center;
     justify-content: center;
+    z-index: 10;
 }
 #choice2 {
     position : relative;
@@ -11,15 +12,54 @@
     text-align: center;
     justify-content: center;
     margin : 7vw;
+    z-index: 10;
 }
 #choices {
     padding: 10vw;
     justify-content: center;
     text-align: center;
 }
-#decide {
+#decideBtn {
     position : static;
     justify-content: center;
     margin-top : 10vw;
     text-align: center;
+}
+input[type=submit] {
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 1px #888888;
+    width: 4rem;
+    height: 2rem;
+    transition: width 0.1s, height 0.1s;
+}
+input[type=submit]:hover {
+    width: 4.5rem;
+    height: 2.5rem;
+}
+body {
+    background-color: #F7F7F7;
+    overflow: hidden;
+}
+input[type=text] {
+    width: 8rem;
+    height: 1rem;
+    border : 0;
+    border-radius: 0.25rem;
+    background-color: #FFFFFF;
+    text-align: center;
+    box-shadow: 1px 1px 1px #888888;
+    transition: width 0.1s, height 0.1s;
+}
+input[type=text]:focus {
+    width: 10rem;
+    height: 2rem;
+}
+#bg {
+    position: absolute;
+    z-index: 0;
+}
+#content {
+    z-index: 10;
 }
