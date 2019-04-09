@@ -10,7 +10,6 @@ def test():
     return render_template('index.html')
 
 @app.route('/post', methods=['POST'])
-
 def post():
     choice1 = request.form['choice1']
     choice2 = request.form['choice2']
@@ -18,7 +17,7 @@ def post():
     result2 = instaCrawl(choice2)
     result = result1 + result2
     print(result)
-    return result
+    return render_template('loading.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
