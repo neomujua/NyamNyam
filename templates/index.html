@@ -6,9 +6,10 @@
     <title>냠냠</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css">
-    <script src="main.js"></script>
 </head>
+
 <body>
+
     <div id="bg"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="./shards.js"></script>
@@ -17,20 +18,39 @@
           $('#bg').shards([10,35,180,.15],[255,20,220,.25],[0,0,0,.25],20,.58,2,.15,true);
         })(jQuery);
     </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8354464756394555",
+              enable_page_level_ads: true
+         });
+    </script>    
     <div id="content">
+        <div id="asdf">
+        <h1>냠냠 사용법</h1>
+        <br>
+        1. 고민이 되는 메뉴 두 개를 각각 입력한다.
+        <br>
+        2. '냠냠' 버튼을 눌러 조금 기다린다.
+        <br>
+        3. 선택받은 음식을 맛있게 먹는다!
+        <br><br>
+        후원 : 국민 58210104131959 이원준
         <form action="/post" method="post">
             <div id="choices">
                 <div id="choice1">
-                    choice1<br><input type="text" name="choice1" placeholder="선택1">
+                    음식1<br><input type="text" name="choice1" placeholder="음식을 입력해주세요.">
                 </div>
                 <div id="choice2">
-                    chocie2<br><input type="text" name="choice2" placeholder="선택2">
+                    음식2<br><input type="text" name="choice2" placeholder="음식을 입력해주세요.">
                 </div>
             </div>
+            <br>
             <div id="decideBtn">
-                <input type="submit" value="냠냠">
+                <input type="submit" value="냠냠" style="font-size: 1rem;">
             </div>
         </form>
+        </div>
     </div>
 </body>
 </html>
