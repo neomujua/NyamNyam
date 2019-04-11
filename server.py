@@ -11,13 +11,13 @@ def test():
 
 @app.route('/post', methods=['POST'])
 def post():
-    choice1 = request.form['choice1']
-    choice2 = request.form['choice2']
-    result1 = instaCrawl(choice1)
-    result2 = instaCrawl(choice2)
-    result = result1 + result2
-    print(result)
+    #choice1 = request.form['choice1']
+    #choice2 = request.form['choice2']
+    #result1 = instaCrawl(choice1)
+    #result2 = instaCrawl(choice2)
+    #result = result1 + result2
+    #print(result)
     return render_template('loading.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0')
