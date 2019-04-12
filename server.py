@@ -2,7 +2,6 @@
 from flask import Flask, render_template, request
 from instaCrawl import *
 from googleTrend import *
-from choose import *
 import random
 
 app = Flask(__name__)
