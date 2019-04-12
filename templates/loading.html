@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>NyamNyam</title>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+             google_ad_client: "ca-pub-8354464756394555",
+             enable_page_level_ads: true
+        });
+    </script>
 </head>
 <body>
-    <h1>Hi</h1>
+    <div id="bg"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/shards.js')}}"></script>
+    <script>
+        (function($) {
+          $('#bg').shards([10,35,180,.15],[255,20,220,.25],[0,0,0,.25],20,.58,2,.15,true);
+            })(jQuery);
+    </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <div id="content">
+        <div id="asdf">
+            <h2>선택 받은 음식은</h2>
+            <br>
+            <br>
+            <h1>{{decision}}!!</h1>
+        </div>
+    </div>
 </body>
 </html>
