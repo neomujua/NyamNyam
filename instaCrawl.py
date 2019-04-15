@@ -11,7 +11,7 @@ def instaCrawl(a):
     options = webdriver.ChromeOptions()	
     options.add_argument('headless')	
     options.add_argument('disable-gpu')	
-    driver = webdriver.Chrome('/Users/wonjunlee/Downloads/chromedriver', options=options)	
+    driver = webdriver.Chrome('/usr/bin/chromedriver', options=options)	
 
     driver.implicitly_wait(3)
 
